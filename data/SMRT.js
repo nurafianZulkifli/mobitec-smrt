@@ -1,49 +1,4 @@
 EDSFormats.SMRT = {
-    'gas-temp-kindness': {
-        serviceNumber: {
-            align: "right",
-            margin: {
-                right: 1
-            },
-            text: "$serviceNumber",
-            font: "Mobitec-LAWO-16",
-            spacing: 2
-        },
-
-        leftFlower: {
-            align: "left",
-            image: "gas-temp-flower"
-        },
-        displayText: {
-            $$group: {
-                centreTopText: {
-                    align: "centre-x,top",
-                    text: "$top",
-                    font: "Hanover-7:3",
-                    spacing: 1
-                },
-                centreBottomText: {
-                    align: "centre-x,bottom",
-                    text: "$bottom",
-                    font: "Hanover-7:3",
-                    spacing: 1
-                }
-            },
-            align: "left",
-            margin: {
-                left: "width(leftFlower) + len(2)"
-            }
-        },
-        rightFlower: {
-            align: "left",
-            margin: {
-                left: "width(leftFlower) + width(displayText) + len(4)"
-            },
-            image: "gas-temp-flower"
-        },
-        text: "Kindness is Greater; Be Greater"
-    },
-
     standardService: {
         serviceNumber: {
             align: "right",
@@ -7573,7 +7528,7 @@ EDSData.SMRT = {
                     renderType: "destScroll",
                     serviceNumber: "983",
                     top: "CHOA CHU KANG",
-                    bottom: "INTERCHANGE",
+                    bottom: "INT / MRT / LRT",
                     topFont: "Mobitec-7:7",
                     bottomFont: "Mobitec-7:7"
                 },
