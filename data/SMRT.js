@@ -10409,15 +10409,17 @@ EDSData.SMRT = {
             renderType: "standardService",
             serviceNumber: "920",
             destination: {
-                text: "BT PANJANG",
-                font: "Mobitec-7:7"
+                text: "BT PANJANG INT",
+                font: "Mobitec-7:5:3"
             },
             scrolls: [
                 {
                     renderType: "destScroll",
                     serviceNumber: "920",
-                    top: "BT PANJANG",
-                    topFont: "Mobitec-13:8"
+                    top: "BUKIT PANJANG",
+                    bottom: "INT  / LRT",
+                    topFont: "Mobitec-7:7",
+                    bottomFont: "Mobitec-7:7"
                 },
                 "PETIR / JELEBU RD",
                 "SENJAR RD / LINK",
@@ -10435,15 +10437,17 @@ EDSData.SMRT = {
             renderType: "standardService",
             serviceNumber: "922",
             destination: {
-                text: "BT PANJANG",
-                font: "Mobitec-13:8"
+                text: "BT PANJANG INT",
+                font: "Mobitec-7:5:3"
             },
             scrolls: [
                 {
                     renderType: "destScroll",
                     serviceNumber: "922",
-                    top: "BT PANJANG",
-                    topFont: "Mobitec-13:7"
+                    top: "BUKIT PANJANG",
+                    bottom: "INT  / LRT",
+                    topFont: "Mobitec-7:7",
+                    bottomFont: "Mobitec-7:7"
                 },
                 "PETIR / JELEBU RD",
                 "JELAPANG ROAD",
@@ -11705,7 +11709,7 @@ EDSData.SMRT = {
             renderType: "standardService",
             serviceNumber: "972",
             destination: {
-                text: "BUKIT PANJANG",
+                text: "BT PANJANG INT",
                 font: "Mobitec-7:5:3"
             },
             scrolls: [
@@ -11713,7 +11717,9 @@ EDSData.SMRT = {
                     renderType: "destScroll",
                     serviceNumber: "972",
                     top: "BUKIT PANJANG",
-                    topFont: "Mobitec-13:7"
+                    bottom: "INT  / LRT",
+                    topFont: "Mobitec-7:7",
+                    bottomFont: "Mobitec-7:7"
                 },
                 "PENANG RD",
                 {
@@ -11748,15 +11754,17 @@ EDSData.SMRT = {
             renderType: "standardService",
             serviceNumber: "973",
             destination: {
-                text: "BT PANJANG",
-                font: "Mobitec-7:7"
+                text: "BT PANJANG INT",
+                font: "Mobitec-7:5:3"
             },
             scrolls: [
                 {
                     renderType: "destScroll",
                     serviceNumber: "973",
-                    top: "BT PANJANG",
-                    topFont: "Mobitec-13:7"
+                    top: "BUKIT PANJANG",
+                    bottom: "INT  / LRT",
+                    topFont: "Mobitec-7:7",
+                    bottomFont: "Mobitec-7:7"
                 },
                 "BT PANJANG ROAD",
                 "PENDING / PETIR RD",
