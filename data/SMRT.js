@@ -10421,12 +10421,13 @@ EDSData.SMRT = {
                     topFont: "Mobitec-7:5:3",
                     bottomFont: "Mobitec-7:5:3"
                 },
-                "WOODLANDS AVE 1",
-                "WOODLANDS AVE 3",
-                "WOODLANDS ST 13",
-                "WOODLANDS ST 32",
+                "WOODLANDS AVE 5",
                 "MARSILING RISE",
                 "MARSILING ROAD",
+                "WOODLANDS AVE 1",
+                "WOODLANDS ST 32",
+                "WOODLANDS AVE 3",
+                "WOODLANDS ST 13",
             ],
             scrollFont: "Mobitec-7:5:3"
         }
