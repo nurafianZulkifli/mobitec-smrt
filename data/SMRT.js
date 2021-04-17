@@ -1155,7 +1155,7 @@ EDSData.SMRT = {
     213: {
         front: {
             renderType: "destScroll",
-            serviceNumber: "911E",
+            serviceNumber: "911T",
             top: "ENDS AT",
             bottom: "WDL INT / MRT",
             topFont: "Mobitec-7:7",
@@ -1165,7 +1165,7 @@ EDSData.SMRT = {
     215: {
         front: {
             renderType: "destScroll",
-            serviceNumber: "912E",
+            serviceNumber: "912T",
             top: "ENDS AT",
             bottom: "WDL INT / MRT",
             topFont: "Mobitec-7:7",
@@ -1175,7 +1175,7 @@ EDSData.SMRT = {
     217: {
         front: {
             renderType: "destScroll",
-            serviceNumber: "913E",
+            serviceNumber: "913T",
             top: "ENDS AT",
             bottom: "WDL INT / MRT",
             topFont: "Mobitec-7:7",
