@@ -1234,7 +1234,7 @@ EDSData.SMRT = {
     221: {
         front: {
             renderType: "destScroll",
-            serviceNumber: "307E",
+            serviceNumber: "307T",
             top: "ENDS AT",
             bottom: "C.C.K INT/MRT/LRT",
             topFont: "Mobitec-7:5:3",
