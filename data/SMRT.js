@@ -12078,7 +12078,7 @@ EDSData.SMRT = {
                     renderType: "destScroll",
                     serviceNumber: "983",
                     top: "CHOA CHU KANG",
-                    bottom: "INTERCHANGE",
+                    bottom: "INT / MRT / LRT",
                     topFont: "Mobitec-7:7",
                     bottomFont: "Mobitec-7:7"
                 },
