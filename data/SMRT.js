@@ -105,31 +105,6 @@ EDSFormats.SMRT = {
 }
 
 EDSData.SMRT = {
-    "-1": {
-        front: {
-            renderType: "standardService",
-            serviceNumber: "",
-            destination: {
-                text: "",
-                font: "Mobitec-7:7"
-            },
-            scrolls: [
-                {
-                    renderType: "gas-temp-kindness",
-                    serviceNumber: "43M",
-                    top: "Happy Kindness Day",
-                    bottom: "24 May 2019"
-                },
-                {
-                    renderType: "gas-temp-kindness",
-                    serviceNumber: "43M",
-                    top: "Greatness is Kindness",
-                    bottom: "Be Greater"
-                }
-            ],
-            scrollFont: "Mobitec-7:5:3"
-        }
-    },
     1: {
         front: {
             renderType: "message",
@@ -11790,7 +11765,7 @@ EDSData.SMRT = {
                     renderType: "destScroll",
                     serviceNumber: "973",
                     top: "BUKIT PANJANG",
-                    bottom: "INT  / LRT",
+                    bottom: "INT / LRT",
                     topFont: "Mobitec-7:7",
                     bottomFont: "Mobitec-7:7"
                 },
@@ -11816,7 +11791,7 @@ EDSData.SMRT = {
                     renderType: "destScroll",
                     serviceNumber: "976",
                     top: "BUKIT PANJANG",
-                    bottom: "INT  / LRT",
+                    bottom: "INT / LRT",
                     topFont: "Mobitec-7:7",
                     bottomFont: "Mobitec-7:7"
                 },
@@ -12368,22 +12343,4 @@ EDSImages.SMRT = {
         [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0],
         [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     ],
-    'gas-temp-flower': [
-        [0, 0, 1, 1, 1, 0, 1, 1, 1, 0, 0, 0, 0, 0],
-        [0, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0],
-        [0, 1, 0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 0, 0],
-        [0, 0, 1, 1, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0],
-        [0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0],
-        [0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0],
-        [0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 0],
-        [0, 0, 1, 1, 1, 1, 1, 1, 1, 0, 0, 1, 1, 0],
-        [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 1],
-        [0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 1],
-        [0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 1, 1],
-        [1, 0, 0, 1, 0, 0, 1, 1, 0, 1, 0, 1, 1, 0],
-        [1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 1, 1, 0, 0],
-        [0, 1, 1, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0],
-        [0, 0, 0, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0],
-        [0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0]
-    ]
 }
