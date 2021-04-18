@@ -52,7 +52,9 @@
      transform="scale(0.75,1)" />
   <g
      id="g5192"
-     transform="matrix(0.94886213,0,0,0.45068879,-105.36231,-48.30957)">
+     transform="matrix(0.94886213,0,0,0.45068879,-105.36231,-48.30957)"
+     inkscape:export-xdpi="96"
+     inkscape:export-ydpi="96">
     <rect
        shape-rendering="optimizeSpeed"
        x="122.60822"
