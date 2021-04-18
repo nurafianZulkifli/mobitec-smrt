@@ -11867,7 +11867,7 @@ EDSData.SMRT = {
             renderType: "destScroll",
             serviceNumber: "975A",
             top: "ENDS AT",
-            bottom: "LOR RUSUK",
+            bottom: "BRICKLAND RD",
             topFont: "Mobitec-7:7",
             bottomFont: "Mobitec-7:7"
         }
@@ -11878,6 +11878,16 @@ EDSData.SMRT = {
             serviceNumber: "975B",
             top: "ENDS AT",
             bottom: "LIM CHU KANG LANE 3",
+            topFont: "Mobitec-7:4",
+            bottomFont: "Mobitec-7:4"
+        }
+    },
+    9754: {
+        front: {
+            renderType: "destScroll",
+            serviceNumber: "975C",
+            top: "ENDS AT",
+            bottom: "POLICE COAST GUARD",
             topFont: "Mobitec-7:4",
             bottomFont: "Mobitec-7:4"
         }
