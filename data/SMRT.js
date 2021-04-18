@@ -11837,7 +11837,7 @@ EDSData.SMRT = {
             renderType: "standardService",
             serviceNumber: "975",
             destination: {
-                text: "BUKIT PANJANG",
+                text: "BT PANJANG INT",
                 font: "Mobitec-7:5:3"
             },
             scrolls: [
@@ -11845,7 +11845,9 @@ EDSData.SMRT = {
                     renderType: "destScroll",
                     serviceNumber: "975",
                     top: "BUKIT PANJANG",
-                    topFont: "Mobitec-13:7"
+                    bottom: "INT / LRT",
+                    topFont: "Mobitec-7:7",
+                    bottomFont: "Mobitec-7:7"
                 },
                 "LIM CHU KANG RD",
                 {
