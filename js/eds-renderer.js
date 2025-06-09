@@ -1,4 +1,13 @@
+function getGlobalObject() {
+    try {
+        return Function('return this')() || (42, eval)('this')
+    } catch(e) {
+        return window
+    }
+}
+
 (function(exports){
+    let globalObject = getGlobalObject()
 
     exports.Position = class Position {
 
@@ -18,8 +27,20 @@
             this.spacing = spacing;
         }
 
+        static mobiFonts = ['Mobitec-7:4', 'Mobitec-7:5:1', 'Mobitec-7:5:2', 'Mobitec-7:5:3']
+
         static fromJSONTextObject(data) {
             return new TextObject(data.text, Font.fromNameString(data.font), null, data.spacing);
+        }
+
+        static mobiFontCheck(data, font, spacing) {
+            if (this.mobiFonts.includes(font.name) && data.includes(',')) {
+                let parts = data.match(/(,+|[^,]+)/g)
+                let multi = parts.map(part => ({ text: part, font: part === ',' ? 'Mobitec-Punctuation' : font.name }))
+                return TextObject.fromJSON(multi, font, spacing)
+            } else {
+                return new TextObject(data, font, null, spacing);
+            }
         }
 
         static fromJSON(data, font, spacing) {
@@ -28,9 +49,13 @@
                 if (typeof font == 'string') {
                     font = Font.fromNameString(font);
                 }
-                text = new TextObject(data, font, null, spacing);
+
+                text = TextObject.mobiFontCheck(data, font, spacing)
             } else if (data instanceof Array) {
-                text = new MultiFontTextObject(data, font, null, spacing);
+                let fontname = font
+                if (typeof font !== 'string') fontname = font.name
+
+                text = new MultiFontTextObject(data, fontname, null, spacing);
             } else { // JSONTextObject
                 text = TextObject.fromJSONTextObject(Object.assign(data, {spacing}));
             }
@@ -104,7 +129,7 @@
         }
 
         takeMeasure() {
-            return this.text.map(textSection => {return {measure: textSection.takeMeasure(), text: textSection}}).reduce((overall, textSection, i) => {
+            return this.text.map(textSection => ({ measure: textSection.takeMeasure(), text: textSection })).reduce((overall, textSection, i) => {
                 let {measure, text} = textSection;
 
                 overall.width += measure.width;
@@ -406,6 +431,7 @@
         y += measure.offset;
 
         text.position = new Position(x, y);
+        text.sizing = measure
 
         if (text instanceof MultiFontTextObject) {
             let totalMeasure = text.takeMeasure();
@@ -421,6 +447,7 @@
                     dy += totalMeasure.height - measure.height
                 }
                 textSection.position = new Position(dx, y + dy);
+                textSection.sizing = measure
 
                 dx += measure.width;
                 dx += textSection.spacing;
@@ -509,6 +536,8 @@
             let font = sectionFormatting.font;
             let text = sectionFormatting.text;
 
+            if (typeof text === 'undefined') throw new Error('Undefined text in section' + JSON.stringify(sectionFormatting, null, 2))
+
             text = TextObject.fromJSON(text, font, spacing);
             text = resolveTextPosition(text, alignment, matrix);
             text.margins = margins;
@@ -519,6 +548,7 @@
     }
 
     exports.parseFormat = function parseFormat(formats, data, images, matrix) {
+        if (!data.renderType) throw new Error('No template specified!')
         let format = new FormattingTemplate(formats[data.renderType], data).solveAll();
 
         let sections = Object.keys(format);
@@ -537,7 +567,7 @@
                 return;
             }
 
-            console.log(`parsing ${sectionName}`);
+            if (!globalObject.hideDebug) console.log(`parsing ${sectionName}`);
 
             if (sectionName === '__dynamic__') {
                 output[sectionName] = {

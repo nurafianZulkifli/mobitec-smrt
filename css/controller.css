@@ -45,24 +45,11 @@
     transform: scaleX(0.9);
 }
 
-
 #mobitec-model-label {
     line-height: 2.75vw;
     width: 16vw;
     font-size: 2.75vw;
     padding: 0;
-    margin: 0;
-    text-align: center;
-
-    transform: scaleX(0.65);
-}
-
-#mobitec-model-qr {
-    line-height: 2.75vw;
-    width: 16vw;
-    font-size: 2.75vw;
-    padding: 0;
-    padding-top: 10px;
     margin: 0;
     text-align: center;
 
@@ -316,7 +303,7 @@
     font-size: 0.8vw;
 }
 
-#controller-screen-dest {
+#controller-screen-dest, #controller-screen-extra, #controller-screen-operator {
     width: 28vw;
 }
 

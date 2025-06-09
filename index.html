@@ -1,19 +1,19 @@
+
 <html>
 <head>
     <meta charset="UTF-8">
-    <script src='scripts/matrix.js'></script>
-    <script src='scripts/fonts.js'></script>
-    <script src='scripts/eds-renderer.js'></script>
-    <script src='scripts/matrix-primitives.js'></script>
-    <script src='scripts/eds.js'></script>
+    <script src='js/matrix.js'></script>
+    <script src='js/fonts.js'></script>
+    <script src='js/eds-renderer.js'></script>
+    <script src='js/matrix-primitives.js'></script>
+    <script src='js/eds.js'></script>
 
     <script src='data/SMRT.js'></script>
-
     <link rel='stylesheet' href='css/eds.css'>
     <link rel='stylesheet' href='css/controller.css'>
     <link rel='stylesheet' href='css/style.css'>
 
-    <script src='scripts/controller.js'></script>
+    <script src='js/controller.js'></script>
     <style id='led-style'>
     </style>
 
@@ -25,7 +25,6 @@
             <div id='controller-left'>
                 <span id='mobitec-label'>mobitec</span>
                 <span id='mobitec-model-label'>ICU 602</span>
-                <span id='mobitec-model-qr'><a href="https://forms.gle/2moKjSTZN9fUAgvQ8"><img class="qr-code" src="assets/QR.svg"></img></a></span>
             </div>
             <div id='controller-right'>
                 <div id='controller-main-left'>
@@ -47,6 +46,24 @@
                                 <span>Destination</span>
                             </div>
                             <div class='dest-table' id='dest-table'>
+                            </div>
+                        </div>
+                        <div id='controller-screen-extra' class='controller-screen' style='display: none'>
+                            <div class='table-labels' id='label-extra'>
+                                <span>Extra</span>
+                                <span>Line no</span>
+                                <span>Destination</span>
+                            </div>
+                            <div class='dest-table' id='extra-table'>
+                            </div>
+                        </div>
+                        <div id='controller-screen-operator' class='controller-screen' style='display: none'>
+                            <div class='table-labels' id='label-operator'>
+                                <span>ID</span>
+                                <span></span>
+                                <span>Operator</span>
+                            </div>
+                            <div class='dest-table' id='operator-table'>
                             </div>
                         </div>
 
@@ -95,7 +112,7 @@
         </div>
     </div>
     <div id='front-eds-container'>
-        <div id="front-eds">
+        <div id='front-eds'>
         </div>
     </div>
 </body>
