@@ -1,7 +1,7 @@
 #front-eds {
     display: grid;
     background-color: #202020;
-
+    border-radius: 25px;
     padding: 2vw;
 }
 
