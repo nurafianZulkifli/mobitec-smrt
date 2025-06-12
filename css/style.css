@@ -1,9 +1,14 @@
 body, html {
     margin: 0;
     padding: 0;
-    background-color: #010101;
+    background-color: #000;
 }
 
 #controller {
     transform: scale(1.5);
+}
+
+.main-eds {
+    margin-top: 2em;
+    scale: 0.8;
 }

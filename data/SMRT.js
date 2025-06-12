@@ -1891,9 +1891,9 @@ EDSData['SMRT'] = {
                 {
                     renderType: "SLBPdestScroll",
                     serviceNumber: "194",
-                    top: "BOON LAY INT - JLN",
+                    top: "HILLGROVE INT - ",
                     topFont: "Mobitec-7:5:1",
-                    bottom: "AHMAD IBRAHIM (LOOP)",
+                    bottom: "BRICKLAND CRES (LOOP)",
                     bottomFont: "Mobitec-7:5:1",
                 },
             ],

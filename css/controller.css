@@ -18,7 +18,8 @@
     width: 60vw;
     height: 17.5vw;
     background-color: #254075;
-
+    border: 20px solid #0c1628;
+    border-radius: 25px;
     display: flex;
 }
 
@@ -291,7 +292,7 @@
 }
 
 #preview-canvas {
-    width: 15vw;
+    width: 14.85vw;
     height: 2.5vw;
 }
 

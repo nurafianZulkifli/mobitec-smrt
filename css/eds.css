@@ -7,12 +7,12 @@
 
 #front-eds-container {
     width: 100vw;
-    height: 50vh;
+    height: 45vh;
     display: flex;
     align-items: center;
     justify-content: center;
 
-    background-color: #010101;
+    background-color: #000;
 }
 
 .led-cell {
